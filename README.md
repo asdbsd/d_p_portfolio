@@ -1,23 +1,19 @@
 # Dobriyan Portfolio
 
-Some content
+> My portfolio application build while learning Rails. Course name is 'Dissecting Ruby on Rails 5'
 
-Things you may want to cover:
+### Features
 
-* Ruby version
+- Real time chat engine for comments
+- Blog
+- Portfolio
+- Drang and Drop interface
 
-* System dependencies
 
-* Configuration
+### Code Example
 
-* Database creation
+```ruby
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+def some_method
+  puts "here it is"
+end
