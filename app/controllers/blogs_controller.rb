@@ -57,11 +57,7 @@
   end
 
   def change_status
-    if @blog.draft?
-      @blog.published!
-    elsif @blog.published?
-      @blog.draft!
-    end
+    @blog.draft? ? @blog.published! : @blog.draft!
     redirect_to blogs_url, notice: 'Post status has been updated'
   end
 
