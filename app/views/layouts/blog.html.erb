@@ -17,8 +17,12 @@
 
     <main role="main" class="container">
       <%= render 'shared/blog_nav' %>
-      <div class="row mt-5">
+
+      <p class="alert"><%= notice %></p>
+
+      <div class="row mt-2">
         <%= yield %>
+        <%= render 'sidebar' %>
       </div>
     </main>
 

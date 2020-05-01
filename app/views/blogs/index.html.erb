@@ -3,18 +3,12 @@
   <%= link_to 'New Blog Post', new_blog_path, class: 'btn btn-sm btn-primary' if logged_in?(:site_admin) %>
 </p>
   <%= render @blogs %>
+
+  <nav class="blog-pagination">
+    <a class="btn btn-outline-primary" href="#">Older</a>
+    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+  </nav>
+
+  <br>
 </div>
 <!-- /.blog-post -->
-
-<%= render 'aside' %>
-
-<nav class="blog-pagination">
-  <a class="btn btn-outline-primary" href="#">Older</a>
-  <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-</nav>
-
-<p id="notice"><%= notice %></p>
-
-<br>
-
-
