@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator name, msg
-    "&copy; #{Time.now.year} | <b>#{name}</b> #{msg}".html_safe
+    "&copy; #{Time.now.year} | <b>#{name}</b>. #{msg}".html_safe
   end
 end
 
