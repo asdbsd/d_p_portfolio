@@ -17,14 +17,18 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <%= render "shared/nav", location: 'top' %>
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
 
-    <%= login_helper %>
+      <%= render "shared/application_nav" %>
 
-    <%= yield %>
+      <%= login_helper %>
 
-    <%= copyright_generator "Dobriyan Petkov", "All rights reserved" %>
+      <%= yield %>
 
-    <%= source_helper("application") %>
+      <%= copyright_generator "Dobriyan Petkov", "All rights reserved" %>
+
+      <%= source_helper("application") %>
+
+    </div>
   </body>
 </html>
