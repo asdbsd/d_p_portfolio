@@ -21,11 +21,11 @@
 
       <%= render "shared/application_nav" %>
 
-      <%= login_helper %>
+
 
       <%= yield %>
 
-      <%= copyright_generator "Dobriyan Petkov", "All rights reserved" %>
+      <%= render 'shared/application_footer' %>
 
       <%= source_helper("application") %>
 
