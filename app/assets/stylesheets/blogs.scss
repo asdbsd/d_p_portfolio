@@ -1,5 +1,5 @@
 @import "bootstrap";
-
+@import "font-awesome";
 
 /* stylelint-disable selector-list-comma-newline-after */
 
@@ -86,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
   font-weight: 400;
 }
+
 .blog-description {
   font-size: 1.1rem;
   color: #999;
@@ -115,6 +116,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .25rem;
   font-size: 2.5rem;
 }
+.blog-post-title a {
+  text-decoration: none;
+}
 .blog-post-meta {
   margin-bottom: 1.25rem;
   color: #999;
@@ -137,4 +141,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-login-menu a {
   margin: 5px 0px;
+}
+
+.social-links li {
+  font-size: 1.25em;
+}
+
+.social-links li a {
+  text-decoration: none;
 }
