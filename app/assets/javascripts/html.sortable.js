@@ -12,8 +12,6 @@
 
 'use strict';
 
-alert("Hey there");
-
 (function ($) {
   var dragging, draggingHeight, placeholders = $();
   $.fn.sortable = function (options) {
