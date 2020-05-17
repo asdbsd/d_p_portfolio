@@ -129,6 +129,7 @@ h1, h2, h3, h4, h5, h6 {
  * Footer
  */
 .blog-footer {
+  margin-top: 20px;
   padding: 2.5rem 0;
   color: #999;
   text-align: center;
@@ -150,4 +151,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .social-links li a {
   text-decoration: none;
+}
+
+.comment-card > .card {
+  margin-top: 15px;
 }

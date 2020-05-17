@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <div class="cover-container d-flex h-100 p-1 mx-auto flex-column">
+    <div class="cover-container d-flex h-100 p-1 mx-auto flex-column session">
 
       <%= video_tag(
           'HardDrivePhotojpeg.mp4',
@@ -26,8 +26,6 @@
         ) %>
 
       <%= render "shared/application_nav" %>
-
-      <p class="alert"><%= notice %></p>
 
       <%= yield %>
 

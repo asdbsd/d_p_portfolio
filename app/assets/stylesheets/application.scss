@@ -9,7 +9,7 @@
 a,
 a:focus,
 a:hover {
-  color: rgba(0, 100, 0, .5);
+  color: rgba(0, 100, 0, .9);
 }
 
 /* Custom default button */
@@ -108,7 +108,7 @@ body {
  * Footer
  */
 .mastfoot {
-  color: dark-blue;
+  color: darkblue;
 }
 
 .card-body {
@@ -131,6 +131,7 @@ body {
   width: 22rem;
   margin: 0 auto;
   float: none;
+  color: darkblue;
 }
 
 .app-nav span {
@@ -164,4 +165,8 @@ body {
 
 .tech-news > .card {
   padding: 30px;
+}
+
+.session > .card {
+  color: darkblue;
 }
