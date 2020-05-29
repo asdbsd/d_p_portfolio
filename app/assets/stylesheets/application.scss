@@ -108,7 +108,7 @@ body {
  * Footer
  */
 .mastfoot {
-  color: darkblue;
+  color: white;
 }
 
 .card-body {
@@ -150,7 +150,7 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home_bg.jpg') no-repeat;
+  background-color: darkblue;
   background-size: cover;
 }
 
