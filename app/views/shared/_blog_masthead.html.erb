@@ -1,3 +1,7 @@
-<p>
+<span>
   <%= link_to 'Write New Blog Post', new_blog_path, class: 'btn btn-sm btn-primary' if logged_in?(:site_admin) %>
-</p>
+</span>
+<span>
+  <%= link_to "Topics", topics_path, class: 'btn btn-sm btn-primary' if logged_in?(:site_admin) %>
+</span>
+
