@@ -2,10 +2,33 @@
 @import "jquery-ui";
 @import "gritter";
 
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: font-url('OpenSans-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: font-url('Roboto-Regular.ttf')
+}
+
 :root {
   --jumbotron-padding-y: 3rem;
 }
 
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto', sans-serif;
+}
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);

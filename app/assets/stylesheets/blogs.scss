@@ -4,13 +4,36 @@
 
 /* stylelint-disable selector-list-comma-newline-after */
 
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: font-url('OpenSans-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: font-url('Roboto-Regular.ttf')
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
 .blog-header {
   line-height: 1;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 2.25rem;
 }
 
@@ -18,9 +41,6 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-}
 
 .display-4 {
   font-size: 2.5rem;
