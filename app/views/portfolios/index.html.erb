@@ -2,7 +2,11 @@
   <div class="container">
     <%= source_helper('alert alert-warning') %>
     <div class="row <%= 'sortable' if logged_in?(:site_admin) %>">
-      <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+      <% if @portfolio_items.any? %>
+        <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+      <% else %>
+        <p>There are no portfolios created yet.</p>
+      <% end %>
     </div>
   </div>
 </div>

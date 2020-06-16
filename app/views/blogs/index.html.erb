@@ -1,6 +1,10 @@
 <div class="col-md-8 blog-main">
-  <%= paginate @blogs %>
-  <%= render @blogs, remote: false %>
-  <%= paginate @blogs %>
+  <% if @blogs.any? %>
+    <%= paginate @blogs %>
+    <%= render @blogs, remote: false %>
+    <%= paginate @blogs %>
+  <% else %>
+    <p>There are no blog posts created yet.</p>
+  <% end %>
 </div>
 <!-- /.blog-post -->
