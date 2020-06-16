@@ -16,19 +16,24 @@
   </head>
 
   <body>
-    <div class="cover-container d-flex h-100 p-1 mx-auto flex-column session">
 
-      <%= video_tag(
-          'HardDrivePhotojpeg.mp4',
-          id: 'background',
-          autoplay: true,
-          loop: true,
-          muted: true,
-        ) %>
+    <%= video_tag(
+        'HardDrivePhotojpeg.mp4',
+        id: 'background',
+        autoplay: true,
+        loop: true,
+        muted: true
+      ) %>
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
 
       <%= render "shared/application_nav" %>
 
-      <%= yield %>
+      <main role="main" class="inner cover text-center">
+
+        <%= yield %>
+
+      </main>
 
       <%= render 'shared/application_footer' %>
 
