@@ -198,14 +198,7 @@ h6, .h6 {
   text-decoration: none;
   color:white;
 }
-.app-card-container {
-  color: black;
-  text-align: left;
-}
-.app-card-container > .card {
-  padding: 30px 30px;
-  margin: 50px 0px;
-}
+
 .profile-image {
   border: 1px solid grey;
 }
@@ -217,4 +210,16 @@ h6, .h6 {
 .skill {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+
+.app-card-container {
+  color: black;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.app-card-container > .card {
+  padding: 30px 30px;
 }
