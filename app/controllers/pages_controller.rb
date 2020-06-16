@@ -6,6 +6,7 @@ class PagesController < ApplicationController
 
   def about
     @skills = Skill.all.order("title ASC")
+    @birthday = Date.new(1990,12,22)
   end
 
   def contact

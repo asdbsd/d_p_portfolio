@@ -29,13 +29,15 @@
         </div>
       </div>
       <div class="col-md-8">
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+        <p>I am <%= distance_of_time_in_words(@birthday, Date.today) %> old, born in beautiful city of Shumen in Bulgaria. My passion for computers and technology is since young age when i was playing on our family's inventory PC running Windows 3.1. Little bit later in late 95's we had our very own home PC running on Windows 95. This was very unique experience which really made me love the technology. Later when i started school i also start attending group computer classes separate from school. Most of the 3 years education was related to using Windows Software like Office.</p>
 
-        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+        <p>As every kid when i was 13-16 years old i was very addicted to PC games, and even at one point i created my own Game Server including Website for game called Mu-Online in my home. This was interesting because i had friends who were interested to play on my server, and i even made some money with selling them requested items. At that time i had also created my personal webpage using html and css and uploded it to bulgarian free hosting(company not working anymore), it included gallery, my friends and information about myself.</p>
+
+        <p>After High School i had to start working in order to make money for living. Since then i have been working in Chezch Republic(6 months), The Netherlands(3 years), and Thailand almost 8 years until now. My main experience is in Tourism and Manufacturing, but i had also experience working as waiter and bartender. Until today i have managed couple wordpress and Joomla websites. My goal is to continue my professional career in development, and that is what really makes me feel that i am doing what i am want to do. You can check some of the websites that i have made in my <%= link_to 'Portfolio Page', portfolios_path %>.</p>
 
         <p>
           <button
-            class="btn btn-primary"
+            class="btn btn-info"
             type="button"
             data-toggle="collapse"
             data-target="#jobHistory"
@@ -46,7 +48,7 @@
           </button>
 
           <button
-            class="btn btn-primary"
+            class="btn btn-info"
             type="button"
             data-toggle="collapse"
             data-target="#education"
@@ -59,19 +61,145 @@
 
         <p>
           <div class="collapse" id="jobHistory">
-            <div class="card card-block">
-              Job 1
+            <div class="media">
+              <div class="media-left px-2">
+                <%= image_tag 'jobs/tez-logo.png', width: 88, alt: 'Tez Tour', class: ' media-object' %>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">TEZ TOUR, TURKEY, ANTALYA</h4>
+                <b>POSITION:</b>
+                Trainee at Service & Quality Department<br />
+                <small>JUNE 2007 – SEPTEMBER 2007</small>
+              </div>
             </div>
-            <div class="card card-block">
-              Job 2
+
+            <div class="media py-3">
+              <div class="media-left px-2">
+                <%= image_tag 'jobs/foxconn-logo.png', width: 88, alt: 'FOXCONN', class: ' media-object' %>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">FOXCONN - APPLE COMPUTER, Czech Republic</h4>
+                <b>POSITION:</b>
+                Employee Department of computer Assembling<br />
+                <small>JUNE 2009 – NOVEMBER 2009</small>
+              </div>
             </div>
+
+            <div class="media py-3">
+              <div class="media-left px-2">
+                <%= image_tag 'jobs/globalware.png', width: 88, alt: 'DIURNA PANO', class: ' media-object' %>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">DIURNA PANO / NETHERLANDS, HOOFDDORP</h4>
+                <b>POSITION:</b>
+                Employee at manufacturing process (USB HARD DRIVES)<br />
+                <small>NOVEMBER 2009 – APRIL 2010</small>
+              </div>
+            </div>
+
+            <div class="media py-3">
+              <div class="media-left px-2">
+                <%= image_tag 'jobs/no-logo.png', width: 88, alt: 'VARIANT 6', class: ' media-object' %>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">“VARIANT 6” AD BULGARIA, SHUMEN</h4>
+                <b>POSITION:</b>
+                Bartender / Waiter<br />
+                <small>MAY 2010 – SEPTEMBER 2010</small>
+              </div>
+            </div>
+
+            <div class="media py-3">
+              <div class="media-left px-2">
+                <%= image_tag 'jobs/globalware.png', width: 88, alt: 'DIURNA PANO', class: ' media-object' %>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">DIURNA PANO / NETHERLANDS, HOOFDDORP</h4>
+                <b>POSITION:</b>
+                Employee at manufacturing process (USB HARD DRIVES)<br />
+                <small>OCTOBER 2010 – MARCH 2011</small>
+              </div>
+            </div>
+
+            <div class="media py-3">
+              <div class="media-left px-2">
+                <%= image_tag 'jobs/globalware.png', width: 88, alt: 'DIURNA PANO', class: ' media-object' %>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">DIURNA PANO / NETHERLANDS, HOOFDDORP</h4>
+                <b>POSITION:</b>
+                Lead of  POS Line<br />
+                <small>MARCH 2011 – MAY 2012</small>
+              </div>
+            </div>
+
+            <div class="media py-3">
+              <div class="media-left px-2">
+                <%= image_tag 'jobs/no-logo.png', width: 88, alt: 'Beach – BG', class: ' media-object' %>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">“Beach – BG” BULGARIA, OBZOR</h4>
+                <b>POSITION:</b>
+                Waiter<br />
+                <small>JUNE 2012 - AUGUST 2012</small>
+              </div>
+            </div>
+
+            <div class="media py-3">
+              <div class="media-left px-2">
+                <%= image_tag 'jobs/onlyone.png', width: 88, alt: 'ONLY ONE TOUR', class: ' media-object' %>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">ONLY ONE TOUR COMPANY LTD., THAILAND, BANGKOK</h4>
+                <b>POSITION:</b>
+                IT Software and Technical Support<br />
+                <small>NOVEMBER 2012 – NOVEMBER 2014</small>
+              </div>
+            </div>
+
+            <div class="media py-3">
+              <div class="media-left px-2">
+                <%= image_tag 'jobs/onlyone.png', width: 88, alt: 'ONLY ONE TOUR', class: ' media-object' %>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">ONLY ONE TOUR COMPANY LTD., THAILAND, BANGKOK</h4>
+                <b>POSITION:</b>
+                Manager  - IT Software and Technical Support<br />
+                <small>DECEMBER 2014 - OCTOBER 2016</small>
+              </div>
+            </div>
+
+            <div class="media py-3">
+              <div class="media-left px-2">
+                <%= image_tag 'jobs/travel_team_group_logo.png', width: 88, alt: 'TRAVEL TEAM GROUP', class: ' media-object' %>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">TRAVEL TEAM GROUP CO., LTD, PATTAYA, THAILAND</h4>
+                <b>POSITION:</b>
+                Sales Representative(Zone Europe)<br />
+                <small>NOVEMBER 2016 - JANUARY 2020</small>
+              </div>
+            </div>
+
+            <div class="media py-3">
+              <div class="media-left px-2">
+                <%= image_tag 'jobs/tez-logo.png', width: 88, alt: 'TRAVEL TEAM GROUP', class: ' media-object' %>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">TEZ TOUR THAILAND, PATTAYA, THAILAND</h4>
+                <b>POSITION:</b>
+                Marketing Manager<br />
+                <small>FEBRUARY 2020 - NOW</small>
+              </div>
+            </div>
+
           </div>
         </p>
 
         <p>
           <div class="collapse" id="education">
-            <div class="card card-block">
-              School 1
+            <div class="card card-block py-2">
+              School of  Foreign Language teaching “Sava Dobroplodni”(Russian & English)
             </div>
           </div>
         </p>
