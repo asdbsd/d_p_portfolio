@@ -4,10 +4,10 @@
     <div class="row <%= 'sortable' if logged_in?(:site_admin) %>">
       <% if @portfolio_items.any? %>
         <%= render partial: 'portfolio_item', collection: @portfolio_items %>
-      <% else %>
-        <p class="py-2">There are no portfolios created yet.</p>
-      <% end %>
     </div>
+      <% else %>
+        <p>There are no portfolios created yet.</p>
+      <% end %>
   </div>
 </div>
 
