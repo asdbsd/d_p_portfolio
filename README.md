@@ -4,7 +4,7 @@
 
 ### Features
 
-- Real time chat engine for comments
+- Real time News from Twitter
 - Blog
 - Portfolio
 - Drang and Drop interface
