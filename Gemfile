@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
+ruby '2.6.8'
+
+gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
@@ -15,7 +17,7 @@ gem 'devise', '~> 4.2'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'pry-byebug'
+  # gem 'pry-byebug'
 end
 
 group :development do
@@ -47,5 +49,3 @@ gem 'twitter', '~> 7.0'
 gem 'redis', '~> 4.1', '>= 4.1.4'
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
-
-ruby '2.7.1'

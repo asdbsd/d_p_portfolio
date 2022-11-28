@@ -32,7 +32,12 @@ a:hover {
   border: .05rem solid #fff;
 }
 
-
+h1.cover-heading {
+    color: white;
+}
+.lead {
+    color: white;
+}
 /*
  * Base structure
  */
@@ -44,13 +49,7 @@ body {
 }
 
 body {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  color: white;
+
   box-shadow: inset 0 0 5rem rgba(255, 0, 255, .2);
 }
 
