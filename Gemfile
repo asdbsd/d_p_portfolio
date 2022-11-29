@@ -11,6 +11,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'capistrano', '~> 3.11'
+gem 'capistrano-rails', '~> 1.4'
+gem 'capistrano-passenger', '~> 0.2.0'
+gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise', '~> 4.2'
