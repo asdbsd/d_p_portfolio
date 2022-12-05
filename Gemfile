@@ -11,15 +11,16 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'capistrano',                 '3.11.2'
-gem 'capistrano-rails',           '1.4.0'
-gem 'capistrano-rbenv',           '2.1.4 '
-gem 'capistrano-passenger',       '0.2.0'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise', '~> 4.2'
 
 group :development, :test do
+  gem 'capistrano', '~> 3.10', require: false
+  gem 'capistrano-rails', '~> 1.5', require: false
+  gem 'capistrano-rbenv', '~> 2.1'
+  gem 'capistrano-db-tasks', require: false
+  
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # gem 'pry-byebug'
 end
