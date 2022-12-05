@@ -15,6 +15,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise', '~> 4.2'
 
+## AWS Deploy gems - requried
+gem 'net-ssh', '>= 6.0.2'
+gem 'ed25519', '>= 1.2', '< 2.0'
+gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
+
 group :development, :test do
   gem 'capistrano', '3.14.0', require: false
   gem 'capistrano-rails', '~> 1.5', require: false
