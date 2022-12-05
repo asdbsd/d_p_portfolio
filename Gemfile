@@ -16,11 +16,11 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise', '~> 4.2'
 
 group :development, :test do
-  gem 'capistrano', '~> 3.10', require: false
+  gem 'capistrano', '3.14.0', require: false
   gem 'capistrano-rails', '~> 1.5', require: false
   gem 'capistrano-rbenv', '~> 2.1'
   gem 'capistrano-db-tasks', require: false
-  
+
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # gem 'pry-byebug'
 end
