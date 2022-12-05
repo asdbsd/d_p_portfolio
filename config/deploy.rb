@@ -4,8 +4,8 @@ lock "~> 3.14.0"
 require 'capistrano-db-tasks'
 
 set :application, "d_p_portfolio"
-set :repo_url, "git@github.com:asdbsd/d_p_portfolio.git"
-set :deploy_to, '/home/deploy/d_p_portfolio'
+set :repo_url, "https://github.com/asdbsd/d_p_portfolio.git"
+set :deploy_to, '/home/ubuntu/d_p_portfolio'
 # set :branch, ENV['CAPISTRANO-DEPLOY'] if ENV['CAPISTRANO-DEPLOY']
 
 set :linked_files, %w{config/database.yml config/master.key}
